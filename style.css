@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000e22;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #001d3d;
+    padding: 6rem 3.5rem;
+    border: 1px solid #003566;
+    border-radius: 1.2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+label {
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: #0084ff;
+    text-shadow: 0 0 10px rgba(124, 192, 255, 0.4);
+}
+
+input {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+#password,
+#username,
+#submit {
+    padding: 1.0rem;
+    border-style: none;
+    border: 1px solid #003e78;
+    border-radius: .3rem;
+    background-color: #001b35;
+    transition: 300ms linear;
+}
+
+#submit {
+    position: relative;
+    left: 120px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    color: #0084ff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-shadow: 0 0 10px rgba(124, 192, 255, 0.4);
+    padding: 20px;
+    transition: left 0.1s;
+}
+
+#password:hover,
+#username:hover,
+#submit:hover {
+    background: #002d58;
+    color: #4ba8ff;
+}
+
+/*Footer*/
+p {
+    color: #9baec0;
+}
+
+a {
+    color: #0084ff;
+}
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: red;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 40%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+}
